@@ -16,7 +16,35 @@ body {
     margin: auto;
     overflow: hidden;
 }
+/* التصميم الأساسي للشاشات الكبيرة (لاب توب) */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 100px 20px;
+}
 
+/* التعديل لما الموقع يفتح على الموبايل (أقل من 768 بكسل) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* الكلام فوق والصورة تحت بعض */
+        text-align: center;
+        padding: 50px 15px;
+    }
+
+    .hero div {
+        width: 100% !important; /* تخلي الـ div بتاع الصورة ياخد العرض كله */
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero div img {
+        width: 100%;
+        max-width: 320px; /* تصغير حجم الصورة شوية عشان تكمش براحتها على الشاشات الصغيرة */
+        height: auto;
+    }
+}
 /* الهيدر */
 .hero {
     position: relative;
