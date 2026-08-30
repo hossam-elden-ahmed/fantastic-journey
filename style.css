@@ -63,8 +63,8 @@ body {
 
 .hero div img {
     z-index: 1;
-    width: 400px;
-    height: 300px;
+    width: 40%;
+    height: 80%;
     border-radius: 10px;
     border: 2px dashed white;
     top:0;
